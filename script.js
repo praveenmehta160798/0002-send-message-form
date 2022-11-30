@@ -79,18 +79,18 @@ function validateForm() {
 }
 
 
-var testname = "Praveen Mehta.";
-var reg1 = /^[a-zA-Z .]{0,30}$/; //for name
-console.log(reg1.test(testname));
+// var testname = "Praveen Mehta.";
+// var reg1 = /^[a-zA-Z .]{0,30}$/; //for name
+// console.log(reg1.test(testname));
 
-var testemail = "praveenmehta160798@gmail.com";
-var reg2 = /^[a-zA-Z][\w\.\_\-]{2,30}[^\.\_\-][@][a-z]{2,10}[\.][a-z]{2,3}$/;
-console.log(reg2.test(testemail));
+// var testemail = "praveenmehta160798@gmail.com";
+// var reg2 = /^[a-zA-Z][\w\.\_\-]{2,30}[^\.\_\-][@][a-z]{2,10}[\.][a-z]{2,3}$/;
+// console.log(reg2.test(testemail));
 
-var testphone = "7971779502";
-var reg3 = /^[7,8,9][0-9]{9}$/;
-console.log(reg3.test(testphone));
+// var testphone = "7971779502";
+// var reg3 = /^[7,8,9][0-9]{9}$/;
+// console.log(reg3.test(testphone));
 
-var testsubject = "For web designing";
-var reg4 = /^[a-zA-Z0-9 ]{10,50}$/;
-console.log(reg4.test(testsubject));
+// var testsubject = "For web designing";
+// var reg4 = /^[a-zA-Z0-9 ]{10,50}$/;
+// console.log(reg4.test(testsubject));

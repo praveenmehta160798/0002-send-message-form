@@ -2,41 +2,60 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border-radius: 10px;
+    font-family: sans-serif;
 }
 body{
-    background: linear-gradient(pink,lightblue) no-repeat;
+    background: linear-gradient(to right, rgb(174,131,239),rgb(111,92,234));
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    display: flex;
+    width: 70%;
+
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.55);
 }
 .container{
-    width: 40%;
-    margin: 2% auto;
-    border: 2px solid white;
+    width: 50%;
 }
-.header{
-    background-color: lightcoral;
+.container:first-child{
+    background: rgb(2,179,210);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
     text-align: center;
-    font-size: 40px;
     color: white;
-    padding: 40px;
+    font-weight: 900;
+    letter-spacing: 2px;
 }
-input[type="submit"]{
-    background-color: lightcoral;
-    color: white;
-    width: 100%;
-    font-size: 30px;
-    padding: 10px;
-    cursor: pointer;
-    border: none;
+h1{
+    margin-top: 150px;
+    margin-bottom: 30px;
+    font-size: 3rem;
     font-weight: 900;
 }
-input[type="submit"]:hover{
-    background-color: rgb(189, 71, 71);
+h3{
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-size: 1.5rem;
 }
-label{
-    font-size: 20px;
-    font-weight: 600;
+.container:last-child{
+    background: white;
+}
+h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 75px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 .form-control{
     margin: 20px;
@@ -46,14 +65,19 @@ label{
 .form-control label{
     display: inline-block;
     margin-bottom: 5px;
+    font-size: 0.9rem;
 }
-.form-control input{
+.form-control input,
+.form-control textarea{
     width: 100%;
     border: 2px solid #f0f0f0;
     border-radius: 5px;
     display: block;
-    font-size: 18px;
-    padding: 12px;
+    padding: 10px;
+    padding-left: 20px;
+    background: rgb(238,238,238);
+    resize: none;
+    font-size: 1.1rem;
 }
 .form-control input:focus{
     outline: 0;
@@ -67,8 +91,8 @@ label{
 }
 .form-control i{
     position: absolute;
-    right: 8px;
-    top: 38px;
+    right: 50px;
+    bottom: 15px;
     visibility: hidden;
 }
 .form-control span{
@@ -76,6 +100,7 @@ label{
     position: absolute;
     left: 40px;
     visibility: hidden;
+    font-size: 0.9rem;
 }
 .form-control.error span{
     visibility: visible;
@@ -87,4 +112,76 @@ label{
 .form-control.error i.fa-exclamation-circle{
     color: #e74c3c;
     visibility: visible;
+}
+.btn{
+    cursor: pointer;
+    background-color: rgb(2,179,210);
+    border: none;
+    padding: 10px 40px;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: auto;
+}
+@media screen and (max-width: 1440px){
+    html{
+        font-size: 15px;
+    }
+    .box{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 1024px){
+    
+    html{
+        font-size: 14px;
+    }
+    .box{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 768px){
+    html{
+        font-size: 13px;
+    }
+    .box{
+        width: 70%;
+        flex-direction: column;
+    }
+    .container{
+        width: 100%;
+    }
+
+    h1{
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+    h3{
+        margin-bottom: 10px;
+        font-weight: 100;
+    }
+
+    h2{
+        font-weight: 900;
+        text-align: center;
+        margin-top: 10px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        padding-bottom: 10px;
+    }
+
+    .form-control{
+        margin: 10px;
+        padding: 0px 20px;
+    }
+}
+@media screen and (max-width: 425px){
+    .box{
+        width: 85%;
+    }
 }
