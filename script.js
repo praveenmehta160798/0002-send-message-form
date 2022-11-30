@@ -94,3 +94,36 @@ function validateForm() {
 // var testsubject = "For web designing";
 // var reg4 = /^[a-zA-Z0-9 ]{10,50}$/;
 // console.log(reg4.test(testsubject));
+
+
+
+// country code
+
+const box = document.querySelector(".select");
+var click1 = true;
+
+function selectClick(){
+    if(click1){
+        box.style.overflowY = "scroll";
+        box.style.height = "100px";
+        click1 = false;
+    }
+    else{
+        box.style.overflowY = "hidden";
+        click1 = true;    
+        box.style.height = "100%";
+    }
+}
+
+const option = document.querySelectorAll(".option");
+const optionLength = option.length;
+console.log(optionLength);
+for(var i = 0; i < optionLength; i++){
+    option[i].setAttribute("onclick","optionClick(this)");
+}
+var x = -1;
+function optionClick(xyz){
+    xyz.style.order = x;
+    x = x - 1;
+    console.log('it run');
+}
