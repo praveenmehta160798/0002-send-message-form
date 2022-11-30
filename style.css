@@ -7,7 +7,8 @@
 body{
     background: linear-gradient(to right, rgb(174,131,239),rgb(111,92,234));
     width: 100vw;
-    height: 100vh;
+    height: max-content;
+    padding: 20px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,6 +171,17 @@ img{
 }
 .select .code-box i{
     visibility: visible;
+}
+/* ------------------------------------------------------------------------------------------  */
+
+/* ------------------------------------------------------------------------------------------  */
+input[type="number"]::-webkit-outer-spin-button, 
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
 }
 /* ------------------------------------------------------------------------------------------  */
 
