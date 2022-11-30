@@ -99,33 +99,64 @@ function validateForm() {
 
 // country code
 
-const box = document.querySelector(".select");
+// const box = document.querySelector(".select");
+// var click1 = true;
+
+// function selectClick(){
+//     if(click1){
+//         box.style.overflowY = "scroll";
+//         box.style.overflow = "visible";
+//         box.style.height = "258px";
+//         click1 = false;
+//     }
+//     else{
+//         box.style.overflowY = "hidden";
+//         box.style.overflow = "hidden";
+//         click1 = true;    
+//         box.style.height = "100%";
+//     }
+// }
+
+// const option = document.querySelectorAll(".option");
+// const optionLength = option.length;
+// console.log(optionLength);
+// for(var i = 0; i < optionLength; i++){
+//     option[i].setAttribute("onclick","optionClick(this)");
+// }
+// var x = -1;
+// function optionClick(xyz){
+//     xyz.style.order = x;
+//     x = x - 1;
+//     console.log('it run');
+// }
+
+// country code2
+var parent = document.querySelector(".select");
 var click1 = true;
 
 function selectClick(){
     if(click1){
-        box.style.overflowY = "scroll";
-        box.style.overflow = "visible";
-        box.style.height = "258px";
+        parent.style.height = "276px";
+        parent.style.overflowY = "scroll";
         click1 = false;
     }
     else{
-        box.style.overflowY = "hidden";
-        box.style.overflow = "hidden";
-        click1 = true;    
-        box.style.height = "100%";
+        parent.style.height = "46px";
+        parent.style.overflow = "hidden";
+        click1 = true;
     }
 }
 
-const option = document.querySelectorAll(".option");
-const optionLength = option.length;
-console.log(optionLength);
-for(var i = 0; i < optionLength; i++){
-    option[i].setAttribute("onclick","optionClick(this)");
+var option = document.querySelectorAll(".option");
+var optionLen = option.length;
+
+for(var i = 0; i < optionLen; i++){
+    option[i].setAttribute("onclick", "optionClick(this)");
 }
+
 var x = -1;
-function optionClick(xyz){
-    xyz.style.order = x;
+function optionClick(abc){
+    abc.style.order = x;
     x = x - 1;
-    console.log('it run');
+    parent.scrollTo(0,0);
 }
