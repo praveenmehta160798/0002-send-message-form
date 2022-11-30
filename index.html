@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Praveen Mehta</title>
+	<!-- FONT-AWESOME-CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+	<!-- index css -->
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h2>Message Form</h2>
+		</div>
+		<form action="" class="form" id="form" onsubmit="return validateForm()">
+			<div class="form-control">
+				<label for="name">Name</label>
+				<input type="text" name="name" id="name" placeholder="Enter your fullname">
+				<i class="fas fa-check-circle"></i>
+				<i class="fas fa-exclamation-circle"></i>
+				<span>Error Msg</span>
+			</div>
+			<div class="form-control">
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" placeholder="Enter your email">
+				<i class="fas fa-check-circle"></i>
+				<i class="fas fa-exclamation-circle"></i>
+				<span>Error Msg</span>
+			</div>
+			<div class="form-control">
+				<label for="phone">Contact</label> <br>
+				<input type="tel" name="phone" id="phone" placeholder="Enter your phone number">
+				<i class="fas fa-check-circle"></i>
+				<i class="fas fa-exclamation-circle"></i>
+				<span>Error Msg</span>
+			</div>
+			<div class="form-control">
+				<label for="subject">Subject</label>
+				<input type="text" name="subject" id="subject" placeholder="Enter your subject">
+				<i class="fas fa-check-circle"></i>
+				<i class="fas fa-exclamation-circle"></i>
+				<span>Error Msg</span>
+			</div>
+			<div class="form-control">
+				<label for="msg">Message</label>
+				<input type="text" name="msg" id="msg" placeholder="Enter your message">
+				<i class="fas fa-check-circle"></i>
+				<i class="fas fa-exclamation-circle"></i>
+				<span>Error Msg</span>
+			</div>
+			<input type="submit" value="Submit" class="btn">
+		</form>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
