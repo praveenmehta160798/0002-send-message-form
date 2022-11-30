@@ -105,11 +105,13 @@ var click1 = true;
 function selectClick(){
     if(click1){
         box.style.overflowY = "scroll";
-        box.style.height = "100px";
+        box.style.overflow = "visible";
+        box.style.height = "258px";
         click1 = false;
     }
     else{
         box.style.overflowY = "hidden";
+        box.style.overflow = "hidden";
         click1 = true;    
         box.style.height = "100%";
     }
