@@ -1,3 +1,4 @@
+
 const form = document.forms['form'];
 const fname = document.forms['form']['name'];
 const email = document.forms['form']['email'];
@@ -41,7 +42,7 @@ function validateForm() {
     
     
     if (emailValue.length == 0) {
-        setError(email, "*Name cannot be blank");
+        setError(email, "*Email cannot be blank");
     } else if (nameValue.length <= 2) {
         setError(email, "*Enter a valid email");
     } else if(isEmailValid.test(emailValue)){
@@ -63,7 +64,7 @@ function validateForm() {
     
     
     if (subjectValue.length == 0) {
-        setError(subject, "*SUbject cannot be blank");
+        setError(subject, "*Subject cannot be blank");
     } else if (subjectValue.length <= 5) {
         setError(subject, "*Subject must be more than 5 alphabets");
     } else if(isSubjectValid.test(subjectValue)){
