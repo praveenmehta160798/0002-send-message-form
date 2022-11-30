@@ -129,7 +129,7 @@ form{
     /* font-size: 10px; */
     position: absolute;
     width: 30%;
-    /* overflow: hidden; */
+    overflow: hidden;
     height: 100%;
     z-index: 1;
     display: flex;
