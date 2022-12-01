@@ -244,4 +244,10 @@ input[type="number"] {
     .box{
         width: 85%;
     }
+    body{
+        padding-top: 100px;
+    }
+    h3{
+        font-size: 0.8rem;
+    }
 }
