@@ -161,3 +161,13 @@ function optionClick(abc){
     x = x - 1;
     parent.scrollTo(0,0);
 }
+
+// input/phone get only 10 digits
+
+document.querySelectorAll("input[type='number']").forEach(input => {
+    input.oninput = () =>{
+        if(input.value.length > 10){
+            input.value = input.value.slice(0, 10);
+        }
+    }
+});

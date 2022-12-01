@@ -138,7 +138,8 @@ img{
 }
 .select{
 	background: rgb(2,179,210);
-	width: 100%;
+	width: max-content;
+    margin-left: auto;
 	height: 46px;
 	overflow: hidden;
 	display: flex;
@@ -183,6 +184,8 @@ input[type="number"]::-webkit-inner-spin-button {
 input[type="number"] {
     -moz-appearance: textfield;
 }
+
+
 /* ------------------------------------------------------------------------------------------  */
 
 @media screen and (max-width: 1440px){
