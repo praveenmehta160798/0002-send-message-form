@@ -74,7 +74,7 @@ function validateForm() {
     }
 
     
-    // return false;
+    return false;
     alert("Your message has been sent successfully.");
     return returnValue;
 }
